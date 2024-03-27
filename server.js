@@ -30,15 +30,17 @@ app.use(express.json());
 app.use(morgan("dev"));
 app.use(express.static(path.join(__dirname,'./client/build')));
 
-//rest api
-app.use('*',function(req,res){
-  res.sendFile(path.join(__dirname,'./client/build/index.html'))
-})
+
 
 //routes
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/category", categoryRoutes);
 app.use("/api/v1/product", productRoutes);
+
+//rest api
+app.use('*',function(req,res){
+  res.sendFile(path.join(__dirname,'./client/build/index.html'))
+})
 
 //rest api
 app.get("/", (req, res) => {
