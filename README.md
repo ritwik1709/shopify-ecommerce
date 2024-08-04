@@ -1,6 +1,6 @@
 # shopify-ecommerce
 
-**Live deployed link** -> https://shy-plum-deer-toga.cyclic.app/
+**Live deployed link** -> https://shopify-ecommerce-kcoq.onrender.com
 
 **Overview:**
 Our MERN Shopify-like E-commerce Platform is a comprehensive online marketplace that enables businesses of all sizes to create, manage, and scale their online stores effortlessly. 
