@@ -8,7 +8,7 @@
     "start": "node server.js",
     "server":"nodemon server.js",
     "client":"npm start --prefix ./client",
-    "client:build": "npm run build --prefix client",
+    "client:build": "npm run build --prefix ./client",
     "dev": "concurrently \"npm start\" \"npm run client\"",
     "build": "npm run client:build"
   },
